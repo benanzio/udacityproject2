@@ -1,0 +1,40 @@
+<!-- This is an HTML comment. Comments allow you to communicate with other programmers using
+text that will be ignored by the computer! -->
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html>
+<head> <!-- The head tag includes important information about the page -->
+  <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+  This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+  You should include this line in the head of all of your webpages. -->
+  <title>Project #2</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+</head>
+<body> <!-- The body tag is where the "flesh" of your HTML goes -->
+  <!-- Write your HTML here -->
+    <h1>The Venture Plan</h1>
+        <img src="images/newventure.png" alt="new venture logo"> <!--logo image found it online NOT mine-->
+            <div class="name">
+                <h3 class="firstQ">Name of your new venture?</h3>
+                    <input class="firstInput" type="text" placeholder="New venture name...">
+            </div>
+    <h3 class="secondQ">What are you going be selling?</h3> <!--this is where the user will write down what they will be selling-->
+        <form class="secondForm">
+            <input class="pands" type="radio" name="busType" value="products" checked>Products
+            <input class="pands" type="radio" name="busType" value="services">Services
+        </form>
+    <div class="form1">
+        <h3 class="thirdQ">How will you make money?</h3> <!--Description of business-->
+        <textarea class="thirdInput" name="text" rows="20" cols="10" wrap="soft" placeholder="Describe how..."></textarea>
+    </div>
+    <div class="form2">
+        <h3 class="fourthQ">What are your expected expenses?</h3>
+        <!--<input id="fourthInput" type="text" placeholder="Expenses...">-->
+        <textarea id="fourthInput" name="text" rows="20" cols="10" wrap="soft" placeholder="Expenses..."></textarea>
+    </div>
+    <p>Will you be seeking to raise capital? If so, click <a href="https://www.fundable.com" target="_blank">$$$.</a></p> 
+    
+    <button type="submit">Submit</button>
+    
+    
+</body>
+</html>
